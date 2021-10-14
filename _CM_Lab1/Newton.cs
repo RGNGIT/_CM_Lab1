@@ -54,7 +54,7 @@ namespace _CM_Lab1
         {
             XPast = X;
             X = XPast - (Func(XPast) / dFunc(XPast));
-            app.listBoxBis.Items.Add($"Итерация: {iter}. Значение: {X}");
+            app.listBoxNewton.Items.Add($"Итерация: {iter}. Значение: {X}");
             app.chart.Series["Метод Ньютона"].Points.AddXY(iter, X);
             DoDerivativeCheck(X);
             Console.WriteLine(X);

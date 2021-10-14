@@ -45,6 +45,6 @@ namespace _CM_Lab1
             app.chart.Series["Метод Прост.Итер."].Points.AddXY(iter, Res);
         }
 
-        double fi(double x) => Math.Pow(10, (2 * x - 7));
+        double fi(double x) => ((4 * x - 4) / x) + (1 / (x * Math.Log10(x + 11))) + 1;
     }
 }
